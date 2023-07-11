@@ -1,0 +1,448 @@
+*{
+     
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.dotted-hr{
+    width: 160px;
+    margin: 0 auto;
+    border: dotted 5px white;
+    border-bottom: none;
+}
+
+
+
+
+
+/* nav bar start ---------------------------------*/
+.nav-bar{
+    background-color: cadetblue;
+}
+.nav-logo{
+   position: relative; 
+   padding: 50px 0px;
+}
+.nav-logo img{
+    width: 150px;
+    height: 100px;
+    border-radius: 50%; 
+    position: absolute;
+    left: 160px;
+    top: 5px;
+
+}
+.nav-header{
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    padding: 10px;
+}
+.nav-header:hover{
+    color: teal;
+    transition: 0.3s;
+}
+.nav-manu a{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+}
+.nav-manu a:hover{
+    background-color: gray;
+    transition: 0.3s;
+    color: #000;
+}
+
+@media screen  and (max-width:600px){
+    .nav-manu a{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: teal;
+        margin: 10px 5px;
+
+    }
+    
+}
+
+.nav-bar::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* nav bar start --------------------*/
+
+/* profile section start heres */
+ 
+ .Profile{
+     padding: 120px  50px 0px 50px ;
+     background-color: tomato;
+     text-align: center;
+     position: relative;
+ }
+
+
+.profile-logo img{
+    width: 150px;
+    height: 75px;
+    border-radius: 100%;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+}
+.profile-logo img:hover{
+    transform: scale(1.5);
+    right: 60px;
+    transition: 0.3s;
+}
+.profile-dosc h1{
+    font-size: 3.5rem;
+    font-family: serif;
+    font-family: 'Satisfy', cursive;
+}
+.profile-dosc p{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    text-align: justify;
+    word-spacing: -1px;
+    color: white;
+}
+
+.Profile::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* profile section ends heres */
+
+/* about section design starts here */
+    .about-me{
+        background-color: teal;
+    }
+    .about-me{
+        text-align: center;
+    }
+    .aboutme-header h1{
+        font-family: 'Satisfy', cursive;
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        color: white;
+    }
+    
+    .aboutme-picture img{
+        width: 220px;
+        height: 170px;
+        border: 5px solid white;
+        border-radius: 50%;
+        margin: 15px 0px;
+    }
+    .aboutme-dosc p ,h3{
+        color: white;
+        font-size: 1.3rem;
+    }
+    .aboutme-dosc p{
+        text-align: justify;
+        margin: 5px 10px;
+    }
+    .aboutme-dosc  hr{
+        width: 95%;
+        margin: auto;
+        border: 4px solid white;
+        border-bottom: none;
+    }
+    .aboutme-dosc h3{
+        padding: 10px 0px;
+    }
+    .button input{
+        color: white;
+        font-family: 'Satisfy', cursive;
+        font-size: 1.5rem;
+        background-color: tomato;
+        padding: 4px 25px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    
+    .about-me::after{
+        clear: both; 
+        display: table;
+        content: '';
+    }
+/* about section design ends here */
+
+
+/* card section design starts here */
+.all-card{
+    background-color:  teal;
+}
+.card-icon i{
+    font-size: 3.5rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin: 7px;
+   
+}
+.singel-card{
+    background-color: #9E9797;
+     margin: 30px 0px;
+     height: 600px;
+     border-radius: 15px;
+     transition: 0.3s;
+     cursor: pointer;
+}
+.card-icon{
+    text-align: center;
+}
+.card-title h1{
+    text-transform: uppercase;
+    font-family:   cursive;
+    text-align: center;
+    background-color: #3d3a3a;
+    padding: 10px 0px;
+    margin: 10px 5px ;
+    border-radius: 50px;
+}
+.card-dosc li{
+    margin: 40px 33px;
+    
+}
+ 
+.singel-card:hover{
+    box-shadow: 0  4px 4px 8px black;
+}
+ 
+.skill-container li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: serif;
+    position: relative;
+
+}
+.skill-container li::before{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    content: '';
+    width: 100%;
+    height: 15px;
+    background-color:  teal;
+    border-radius: 1000px;
+}
+.skill-container li::after{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    content: '';
+    width: 0%;
+    height: 15px;
+    background-color: tomato;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.skill-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 90%;
+    }
+}
+.skill-container li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.skill-container li.bootstrap::after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 95%;
+    }
+}
+.skill-container li.javascript::after{
+    animation-name: javascript;
+}
+@keyframes javascript{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.skill-container li.react::after{
+    animation-name: react;
+}
+@keyframes react{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 95%;
+    }
+}
+.skill-container li.python::after{
+    animation-name: python;
+}
+@keyframes python{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.skill-container li.django::after{
+    animation-name: django;
+}
+@keyframes django{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.all-card::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* card section design ends here */
+ /* achivement section starts here */
+
+ .achivement{ 
+    background-color: teal;
+    text-align: center;
+}
+.my-achievement  h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Satisfy', cursive;
+}
+.my-achievement  .dotted-hr{
+    width: 195px;
+}
+.my-achievement  ol{
+ text-align: left;
+margin-left: 50px;
+margin-top: 40px;
+ 
+}
+.my-achievement  li{
+    margin: 40px 0px;
+  
+}
+.contact-me{
+    text-align: center;
+}
+.contact-me h1{
+    text-transform: uppercase;
+    font-family: 'Satisfy', cursive;
+}
+.contact-me .dotted-hr{
+    width: 95px;
+}
+.input-box{
+    margin-top: 50px;
+    text-align: center;
+}
+.input-box input{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.input-box textarea{
+    resize: none;
+    width: 70%;
+    margin: 10px 0px;
+    /* margin-left: 70px; */
+    margin-bottom: 15px;
+}
+ .reset-btn, .submit-btn{
+    padding: 10px 25px;
+    color: #000;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: tomato;
+}
+.more-contact-link {
+    text-align: center;
+
+}
+.more-contact-link h1{
+    text-transform: uppercase;
+    font-family: 'Satisfy', cursive;
+}
+.more-contact-link .dotted-hr{
+    width: 210px;
+    margin-bottom: 25px;
+}
+ 
+.btn{
+   font-size: 30px;
+   border-radius: 50%;
+   padding: 10px 20px;
+   margin-bottom: 20px;
+}
+ 
+.btn:hover{
+    background-color: gray;
+    transition: .3s;
+
+}
+
+
+.achivement::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* achivement section ends here */
+
+/* footer section design starts here */
+
+.footer{
+    background-color: #000;
+    
+}
+.footer p{
+    padding: 15px 0px;
+    text-align: center;
+    color: #ddd;
+}
+
+/* footer section design ends here */
